@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block content %}
+<form method="post" action="/submit">
+    <label for="run">Run:</label>
+    <select id="run" name="run" required>
+        <option value="test1">Test 1</option>
+        <option value="test2">Test 2</option>
+    </select>
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" name="dob" required />
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+{% block content %} {% endblock %} {% endblock %}
